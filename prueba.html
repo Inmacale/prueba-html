@@ -208,7 +208,109 @@ no respeta los espacios en blanco
         <li>Encender el aparato</li>
     </ol>
 
-</body>
+    <h1>Ejercicio 8</h1>
+
+    <h3>Menú</h3>
+
+    <ul>
+        <li>Inicio</li>
+        <li>
+            <strong>Noticias</strong>
+            <ul>
+                <li><a href="#" title="Ver las noticias más recientes">Recientes</a></li>
+                <li><strong><a href="#" title="Ver las noticias más leídas">Más leídas</a></strong></li>
+                <li><a href="#" title="Ver las noticias más valoradas">Más valoradas</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Ejemplo etiqueta img</h3>
+
+    <img src="logotipo.gif" alt="Logotipo de Mi Sitio" />
+
+    <h3>Ejemplo etiqueta objeto</h3>
+    <object title="La Tierra vista desde el espacio" classid="http://www.observer.mars/TheEarth.py">
+        <!-- Formato alternativo en forma de vídeo -->
+        <object data="PlanetaTierra.mpeg" type="application/mpeg">
+            <!-- Otro formato alternativo mediante una imagen GIF -->
+            <object data="PlanetaTierra.gif" type="image/gif">
+                <!-- Si el navegador no soporta ningún formato, se muestra el siguiente texto -->
+                La <strong>Tierra</strong> vista desde el espacio.
+            </object>
+        </object>
+    </object>
+
+    <h3>Ejemplo etiqueta tablas basicas</h3>
+
+    <h1>Listado de cursos</h1>
+
+    <table>
+        <tr>
+            <td><strong>Curso</strong></td>
+            <td><strong>Horas</strong></td>
+            <td><strong>Horario</strong></td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td>20</td>
+            <td>16:00 - 20:00</td>
+        </tr>
+
+        <tr>
+            <td>HTML</td>
+            <td>20</td>
+            <td>16:00 - 20:00</td>
+        </tr>
+
+        <tr>
+            <td>Dreamweaver</td>
+            <td>60</td>
+            <td>16:00 - 20:00</td>
+        </tr>
+    </table>
+
+    <h3>Ejemplo de otros elementos de formulario</h3>
+
+    <label for="so">Sistema operativo</label> <br />
+    <select id="so" name="so">
+        <option value="" selected="selected">- selecciona -</option>
+        <option value="windows">Windows</option>
+        <option value="mac">Mac</option>
+        <option value="linux">Linux</option>
+        <option value="otro">Otro</option>
+    </select>
+
+    <label for="so2">Sistema operativo</label> <br />
+    <select id="so2" name="so2" size="5">
+        <option value="windows" selected="selected">Windows</option>
+        <option value="mac">Mac</option>
+        <option value="linux">Linux</option>
+        <option value="otro">Otro</option>
+    </select>
+
+    <label for="so3">Sistema operativo</label> <br />
+    <select id="so3" name="so3" size="5" multiple="multiple">
+        <option value="windows" selected="selected">Windows</option>
+        <option value="mac">Mac</option>
+        <option value="linux">Linux</option>
+        <option value="otro">Otro</option>
+    </select>
+
+    <h3>Ejemplo de etiqueta address</h3>
+    <address>
+        Nombre de la empresa
+        Dirección completa
+        Teléfono y Fax
+    </address>
+    <address>
+        <a href="../People/Raggett/">Dave Raggett</a>,
+        <a href="../People/Arnaud/">Arnaud Le Hors</a>,
+        contact persons for the <a href="Activity">W3C HTML Activity</a><br />
+        $Date: 1999/12/24 23:37:50 $
+    </address>
+    <hr>
+
 </body>
 
 </html>
