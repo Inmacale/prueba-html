@@ -1,0 +1,180 @@
+/*selector universal, selecciona todos los elementos de la pagina */
+* {
+    margin: 1em;
+    padding: 0;
+}
+
+/*selector de tipo o etiqueta, selecciona todas las etiquetar html*/
+p {
+    color: black;
+    font-family: Verdana;
+}
+
+h1 {
+    color: red;
+}
+
+h3 {
+    color: cadetblue;
+}
+
+h1,
+h2,
+h4 {
+    color: aquamarine;
+}
+
+/*selector descendente, selecciona los elementos que se encuentra dentro de otros elementos*/
+
+p span {
+    color: violet;
+}
+
+/*selector de clase*/
+.error {
+    color: red;
+}
+
+.destacado {
+    font-size: 15px;
+}
+
+.especial {
+    font-weight: bold;
+}
+
+/*selectores de ID*/
+#destacado {
+    color: tomato;
+}
+
+/*la principal diferencia entre class e id es que cuando se quiere aplicar un estilo a un solo elemento específico de la página se utiliza id y si se quiere aplicar un estilo a varios elementos se utiliza class*/
+
+/*combinación de selectores básicos*/
+/*aviso .especial{...}
+<div class="aviso">
+    <p class="especial">Este párrafo tiene la clase especial</p>
+</div>
+
+<div class="aviso">
+    <p>No tiene la clase especial</p>
+</div>
+
+<div class="otro">
+    <p class="especial">No tiene la clase especial</p>
+</div>
+*/
+
+/*selecto de hijos, cualquier elemento span que sea hijo directo de un elemento p*/
+p>span {
+    color: blue;
+}
+
+/* la diferencia entre descendente e hijo es que el primero se aplica a todos los elementos que se encuetran dentro del elemento "primero" y el segundo solo si el siguiente elemento*/
+
+/*selector adyacente*/
+h2 {
+    color: green;
+}
+
+h1+h2 {
+    color: red;
+}
+
+p+p {
+    text-indent: 1.5em;
+}
+
+/*selector de atributos*/
+/* Se muestran de color azul todos los enlaces que tengan
+   un atributo "class", independientemente de su valor */
+a[class] {
+    color: blue;
+}
+
+/* Se muestran de color azul todos los enlaces que tengan
+      un atributo "class" con el valor "externo" */
+a[class="externo"] {
+    color: blue;
+}
+
+/* Se muestran de color azul todos los enlaces que apunten
+      al sitio "http://www.ejemplo.com" */
+a[href="http://www.ejemplo.com"] {
+    color: blue;
+}
+
+/* Se muestran de color azul todos los enlaces que tengan
+      un atributo "class" en el que al menos uno de sus valores
+      sea "externo" */
+a[class~="externo"] {
+    color: blue;
+}
+
+/* Selecciona todos los elementos de la página cuyo atributo
+      "lang" sea igual a "en", es decir, todos los elementos en inglés */
+*[lang=en] {
+    color: green;
+}
+
+/* Selecciona todos los elementos de la página cuyo atributo
+      "lang" empiece por "es", es decir, "es", "es-ES", "es-AR", etc. */
+*[lang|="es"] {
+    color: black;
+}
+
+/*Unidades de medida*/
+/*Unidades absolutas:
+in, pulgadas ("inches", en inglés). Una pulgada equivale a 2.54 centímetros.
+cm, centímetros.
+mm, milímetros.
+pt, puntos. Un punto equivale a 1 pulgada/72, es decir, unos 0.35 milímetros.
+pc, picas. Una pica equivale a 12 puntos, es decir, unos 4.23 milímetros.*/
+
+/*Unidades relativas,La unidades relativas, a diferencia de las absolutas, no están completamente definidas, ya que su valor siempre está referenciado respecto a otro valor.
+em, (no confundir con la etiqueta <em> de HTML) relativa respecto del tamaño de letra del elemento.
+ex, relativa respecto de la altura de la letra x ("equis minúscula") del tipo y tamaño de letra del elemento.
+px, (píxel) relativa respecto de la resolución de la pantalla del dispositivo en el que se visualiza la página HTML.*/
+
+/*colores: 5 formas diferetnes
+1. palabtas clave.
+2. colores del sistema. 
+3. RGB hexadecimal.
+4. RGB numérico. 
+5. RGB porcentual*/
+
+
+/*Modelo de caja*/
+
+/*todo esta en caja pero no es visible, los navegadores crean y colocan las cajas de forma automática, pero CSS permiten modificar todas sus características. cada una de las cajas está formada por 6 partes. 
+1. margin
+2. blackground-color
+3. blackground-image
+4. padding
+5. border de padding
+6. content*/
+
+
+#paginacion {
+    border: 1px solid #CCC;
+    background-color: #E0E0E0;
+    padding: .5em;
+    overflow: hidden;
+}
+
+.derecha {
+    float: right;
+}
+
+.izquierda {
+    float: left;
+}
+
+body {
+    color: #777;
+}
+
+p {
+    line-height: 1.2;
+    font-size: 1em
+}
